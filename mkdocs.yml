@@ -7,12 +7,15 @@ copyright: >
   Copyright &copy; 2023 Senyao's Blog
 docs_dir: docs/
 nav:
-  - Intro: 'index.md'
+  - Blog:
+    - docs/index.md 
 
 plugins:
   - search:
       separator: '[\s\-\.]' 
   - glightbox
+  - blog:
+      enabled: true
 
 theme:
   name: 'material'
