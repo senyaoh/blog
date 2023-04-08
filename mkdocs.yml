@@ -7,15 +7,14 @@ copyright: >
   Copyright &copy; 2023 Senyao's Blog
 docs_dir: docs/
 nav:
-  - Blog:
-    - docs/index.md 
+  - Home: 'index.md'
+  - 'Math & Physics':
+    - 'Variational Calculus': 'variational_calculus.md'
 
 plugins:
   - search:
       separator: '[\s\-\.]' 
   - glightbox
-  - blog:
-      enabled: true
 
 theme:
   name: 'material'
