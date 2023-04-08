@@ -1,0 +1,70 @@
+site_name: Senyao's Blog
+site_description: Senyao's Blog
+site_author: Senyao's Blog
+site_url: 'https://senyaoh.github.io/blog/'
+
+copyright: >
+  Copyright &copy; 2023 Senyao's Blog
+docs_dir: docs/
+nav:
+  - Intro: 'index.md'
+
+plugins:
+  - search:
+      separator: '[\s\-\.]' 
+  - glightbox
+
+theme:
+  name: 'material'
+  
+  palette:
+    scheme: default
+  
+  features:
+  - navigation.instant     # Instant loading pages.
+  - navigation.sections    # Render top sections as groups.
+  - navigation.top         # Adds a "Back to top" that is shown when scrolling up.
+  - navigation.tracking    # Updates the url with highlighted section anchor.
+  - navigation.indexes     # Documents can be directly attached to sections
+  - search.highlight       # Search will highlight the searched word(s) on the page.*
+  - search.share           # Adds an option to share a search query link.*
+  - search.suggest         # Search will suggest the likeliest completion for a word.*
+  - content.tabs.link
+  - content.code.annotate  # code annotations
+  
+  icon:
+    repo: fontawesome/brands/github
+  
+
+extra_css:
+  - stylesheets/extra.css
+extra:
+  social:
+    - icon: 'fontawesome/brands/github'
+      link: 'https://github.com/senyaoh'
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.details:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
